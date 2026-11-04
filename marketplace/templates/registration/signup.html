@@ -1,0 +1,1 @@
+{% extends 'marketplace/base.html' %}{% block content %}<section class="form-panel"><p class="eyebrow">JOIN THE MOVEMENT</p><h1>Create your account</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button class="primary">Create account</button></form><p>Already a member? <a href="{% url 'login' %}">Log in</a></p></section>{% endblock %}

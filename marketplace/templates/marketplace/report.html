@@ -1,0 +1,1 @@
+{% extends 'marketplace/base.html' %}{% block content %}<section class="form-panel"><h1>Report this listing</h1><p class="muted">{{ listing.title }}</p><form method="post">{% csrf_token %}{{ form.as_p }}<button class="primary">Send report</button></form></section>{% endblock %}
